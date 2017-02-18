@@ -1,0 +1,134 @@
+@inherits RazorEngine.Templating.TemplateBase<Pretzel.Logic.Templating.Context.PageContext>
+
+  <!DOCTYPE html>
+  <html lang="en">
+  @Include("head.cshtml")
+
+  <body>
+
+    <div class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <a href="/" class="navbar-brand">Balance Built Pty Ltd</a>
+          <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div class="navbar-collapse collapse" id="navbar-main">
+          <ul class="nav navbar-nav">
+          </ul>
+
+          <ul class="nav navbar-nav navbar-right">
+            <!--<li>
+              <a href="/we-provide.html">We Provide</a>
+            </li>-->
+            <!--<li>
+              <a href="/Procedure.html">Procedure</a>
+            </li>-->
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="designs">Designs <span class="caret"></span></a>
+              <ul class="dropdown-menu" aria-labelledby="designs">
+                <li><a href="/studio.html">Studio</a></li>
+                <!--<li><a href="/1-bedroom.html">1 Bedroom</a></li>
+                <li><a href="/2-bedroom.html">2 Bedroom</a></li>-->
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="further-info">Further Information <span class="caret"></span></a>
+              <ul class="dropdown-menu" aria-labelledby="further-info">
+                <li><a href="/about.html">About</a></li>
+                <!--<li><a href="/panels.html">Panels</a></li>-->
+                <li><a href="/principles.html">Principles</a></li>
+                <li><a href="/comparison.html">Comparison</a></li>
+                <!--<li><a href="/faq.html">FAQ</a></li>-->
+              </ul>
+            </li>
+          </ul>
+
+        </div>
+      </div>
+    </div>
+
+    <div style="background-image: url('/img/bg.webp'); background-repeat: no-repeat; background-size:cover">
+
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <img src="/img/logo.png?" alt="Balance Built Pty Ltd" style="margin-top: 40px;margin-bottom: 40px;" />
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="container">
+
+      <div class="col-md-9">
+        @Raw(Model.Content)
+      </div>
+      <div class="col-md-3">
+        <h2>Contact</h2>
+        <a class="btn btn-info btn-block text-left" href="tel:0352222222" role="button">
+          <span class="glyphicon glyphicon-bullhorn" aria-hidden="true"></span> 03 5222 2222
+        </a>
+
+        <a class="btn btn-info btn-block text-left" href="mailto:rar&amp;rar.com" role="button">
+          <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> rar&amp;rar.com
+        </a>
+
+      </div>
+
+    </div>
+
+    <div style="background: #000;padding-top:25px;padding-bottom: 25px;">
+
+      <div class="container">
+        <footer>
+          <div class="row">
+            <div class="col-md-3">
+              <h4>&copy; 2017 Balance Built Pty Ltd</h4>
+            </div>
+            <div class="col-md-3">
+              <h4>What We Offer</h4>
+              <ul class="list-unstyled">
+                  <li>Superior building envelope</li>
+                  <li>Structural insulated wall panels</li>
+                  <li>Structural insulated roof panels </li>
+                  <li>Windows and doors</li>
+                  <li>Quotation given with in 10 days</li>
+              </ul>
+            </div>
+            <div class="col-md-3">
+              <h4>&nbsp;</h4>
+              <ul class="list-unstyled">
+                  
+                  <li>Package is delivered to site</li>
+                  <li>Wall panels and roof panel system which simplifies the building process, we provide the best light weight insulated
+                      building system at a very affordable price</li>
+                  
+              </ul>
+            </div>
+            <div class="col-md-3">
+              <h4>&nbsp;</h4>
+              <ul class="list-unstyled">
+                  <li>Finally a environmentally friendly building system that reduces energy requirements and uses low embodied energy
+                      building products</li>
+                  <li>With massive buying power savings can be passed on to the client</li>
+                  <li>Build times reduced dramatically with increased numbers</li>
+              </ul>
+            </div>
+          </div>
+        </footer>
+      </div>
+
+    </div>
+
+    <script src="http://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+      crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+  </body>
+
+  </html>
